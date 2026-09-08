@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Bodoni Moda", Georgia, serif;
+  --font-display: "Playfair Display", "Bodoni Moda", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-signature: "Caveat", cursive;
+
+  --color-cream: #F5F1EA;
+  --color-cream-subtle: #FAF7F2;
+  --color-cream-card: #EFE9DE;
+  --color-cream-border: #DED3C4;
+  --color-terracotta: #C1552E;
+  --color-terracotta-dark: #A54421;
+  --color-terracotta-light: #DC6B43;
+  --color-ink: #161616;
+  --color-ink-muted: #5C5751;
+  --color-ink-subtle: #8A847C;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+/* Custom styles for editorial typography and vertical text */
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Smooth pulse & shine effects */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.shimmer-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transform: skewX(-20deg);
+  animation: shimmer 3s infinite;
+}
+
