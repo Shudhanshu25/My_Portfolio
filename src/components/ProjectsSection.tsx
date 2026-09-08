@@ -139,7 +139,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                       title="Open live web app in new tab"
                     >
                       <ExternalLink className="w-3 h-3" />
-                      <span>Live App</span>
+                      <span>{project.liveUrlText || 'Live App'}</span>
                     </a>
                   )}
                 </div>

@@ -146,7 +146,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ project,
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#C1552E] text-[#F5F1EA] text-xs font-mono font-bold hover:bg-[#A54421] transition-colors shadow-xs"
               >
                 <ExternalLink className="w-3.5 h-3.5" />
-                <span>Launch Live App</span>
+                <span>{project.liveUrlText || 'Launch Live App'}</span>
               </a>
             )}
 

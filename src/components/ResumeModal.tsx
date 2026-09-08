@@ -212,7 +212,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                         className="inline-flex items-center gap-0.5 text-[10px] font-mono text-[#C1552E] hover:underline"
                         title="Open live deployment"
                       >
-                        [Live App ↗]
+                        [{proj.liveUrlText || 'Live App'} ↗]
                       </a>
                     )}
                   </span>

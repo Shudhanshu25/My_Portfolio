@@ -134,7 +134,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
       'Protocol: Asynchronous streaming generators via HTTP SSE and WebSockets',
     ],
     githubUrl: 'https://github.com/',
-    liveUrl: '#',
+    liveUrl: 'https://drive.google.com/drive/folders/1foi36KV36UydWmD4gjTG1KfsBtGV8Twp?usp=sharing',
+    liveUrlText: 'Drive Link',
   },
 ];
 

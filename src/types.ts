@@ -17,6 +17,7 @@ export interface ProjectItem {
   metrics?: string;
   githubUrl?: string;
   liveUrl?: string;
+  liveUrlText?: string;
   image: string;
   features: string[];
   architectureNotes?: string[];
